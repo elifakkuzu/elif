@@ -1,0 +1,45 @@
+GitHub Kullanımı: Basit GIT Komutları
+Git, yazılım geliştirme süreçlerinde kullanılan, hız odaklı, dağıtık çalışan bir sürüm kontrol ve kaynak kod yönetim sistemidir. Milyonlarca şirket verimli kod yönetimi ve projelerinin sürüm kontrolü için kullanıyor.
+Basit GIT Komutları
+git config
+Kullanıcı adı, mail gibi ayarların belirleneceği komuttur. Örnek; 
+git config - global user.email sam@google.com
+git init
+Bu komut yeni bir GIT dizini oluşturmak için kullanılır. Örnek:
+git init
+git add
+Verilen paremetrelere göre o dosyaları dizine ekler ve commit'lemeye hazır hale gelirler. "Git add ." komutu mevcut dizindeki tüm dosyaları dizine ekler. "Git add dosya.txt" komutu mevcut dizindeki "dosya.txt" dosyasını dizine ekler.
+git add dosya.txtgit add .
+git rm
+git add komutunun tersi olarak belirtiğiniz dosya veya dosyaları çalışma dizininden siler.
+git rm dosya.txt
+git clones
+git clone komutu dizin kontrol amaçları için kullanılır.
+Dizin uzaktaki bir sunucuda bulunuyorsa, şunu kullanın:
+git clone alex@93.188.160.58:/path/to/repository
+Aksi durumda, yerel bir dizinin kopyası oluşturulmak istemiyorsa, şunu kullanın:
+git clone /path/to/repository
+git commit
+git commit komutu değişiklikleri kafaya uygulamak için kullanılır. Taahhüt edilen tüm değişikliklerin uzak dizine gitmeyeceğini unutmayın. Kullanımı:
+git commit –m "Uygulama için komut mesajı"
+git status
+git status komutu, henüz eklenmeyecek veya taahhüt edilen dosyalarla birlikte değiştirilen dosyaların listesini görüntüler. Kullanımı:
+git status
+git push
+git push, en çok kullanılan temel GIT komutlarından bir diğeridir. Basit bir itme ile, yapılan değişiklikleri çalışma diziniyle ilişkili uzak dizinin ana dalına gönderir. Örneğin:
+git push origin master
+git checkout
+git checkout komutu dal oluşturmak veya dallar arasında geçiş yapmak için kullanılır. Örneğin, aşağıdaki yeni bir dal oluşturur ve ona geçer:
+git checkout
+git remote
+git remote komutu bir kullanıcının bir uzak dizine bağlanmasını sağlar. Aşağıdaki komut şu anda yapılandırılmış uzak diiznleri listeler:
+git remote –v
+Bu komut da kullanıcının yerel dizini uzak bir dizine bağlamasını sağlar:
+git remote add origin
+git gc
+Depoyu gereksiz dosyaları temizleyerek, çöp toplama yoluyla optimize etmek için aşağıdakini kullanın:
+git gc
+git fsck
+GIT dosya sisteminin bütünlüğünü kontrol etmek için git fsck komutunu kullanın. Bozuk nesneler tanımlanır:
+git fsck
+ELİF AKKUZU
